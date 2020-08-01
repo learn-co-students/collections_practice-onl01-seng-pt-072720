@@ -38,8 +38,8 @@ array.inject(0){ |sum, num| sum + num }
 end
 
 def add_s(array)
-    array.each_with_index do |element, index|
-        element[element.length] = "s" unless index == 1
+    array.each_with_index do |word, index|
+        word[word.length] = "s" unless index == 1
       end
 end
 
