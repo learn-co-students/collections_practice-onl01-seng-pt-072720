@@ -34,16 +34,9 @@ end
 
 def add_s(array)
     new_array = []
-    array.each_with_index do |word, i| 
-        x << "s" if !array[1]
-    new_array
-end 
-
-def add_s(array)
-    new_array = []
     array.each_with_index do |word, i|
-        if word[i] == array[1] 
-            new_array << word 
+        if i == 1 
+            new_array << array[1]
         else 
             new_array << word + "s" 
         end 
