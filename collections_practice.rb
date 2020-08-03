@@ -20,8 +20,7 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  new_array = array.each {|i| i[2] = "$"}
-  new_array
+  array.each {|i| i[2] = "$"}
 end
 
 def find_a(array)
@@ -41,5 +40,4 @@ def add_s(words)
       word = word << "s"
     end
   end
-
-end 
+end
